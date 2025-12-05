@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Pull Source Code') {
             steps {
-                git branch: 'main', url: 'git@github.com:navinkumar2701007/woodex.git'
+            git branch: 'master', url: 'git@github.com:navinkumar2701007/woodex.git'
             }
         }
 
