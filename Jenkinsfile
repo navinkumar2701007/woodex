@@ -10,7 +10,7 @@ pipeline {
 
         stage('Deploy to Nginx Server') {
             steps {
-                sh "rsync -az --delete ./ ubuntu@15.207.221.194:/var/www/woodex/"
+                sh "rsync -az --delete ./ ubuntu@15.207.221.194:/var/www/NAVIN/"
                 sh "ssh ubuntu@15.207.221.194 'sudo systemctl restart nginx'"
             }
         }
